@@ -1,0 +1,39 @@
+<html> <head> <style>#app,body{margin:0;padding:0}#app{width:100%;position:absolute}#app,.view{height:100%}.view{display:flex;width:calc(100% - 4em);justify-content:center;align-items:center;word-break:keep-all;text-align:center;margin-left:2em}.view h1{font-size:4em}.error{background-color:red;color:#fff}.linked{cursor:pointer}</style> <script>
+const viewData = {
+    type: "Sequence",
+    children: [{
+        type: "Text",
+        text: "이름을 알려주세요"
+    }, {
+        type: "Text",
+        text: "닉네임을 알려주세요"
+    }, {
+        type: "Text",
+        text: "예전 소속(동아리)을 알려주세요"
+    }, {
+        type: "Text",
+        text: "현재 소속을 알려주세요\n(매우 간단히)"
+    }, {
+        type: "Text",
+        text: "최근 어떤 일을 하고 계신가요?"
+    }, {
+        type: "RandomPick",
+        children: [{
+            type: "Text",
+            text: "갑자기 천억이 생긴다면 무엇을 하고 싶으신가요?"
+        }, {
+            type: "Text",
+            text: "나에게 있어 가장 완벽한 하루란?"
+        }, {
+            type: "Text",
+            text: "조금 특별한 취미가 있다면?"
+        }, {
+            type: "Text",
+            text: "탐라에서 나의 포지션은?"
+        }]
+    }, {
+        type: "Text",
+        text: "추가 질문 타임!"
+    }]
+};
+</script> </head> <body> <div id="app"></div> <script src="./src.5dba9ede.js"></script> </body> </html>
